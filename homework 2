@@ -1,0 +1,31 @@
+
+
+def arguments(*arg):
+    global i
+    global s
+    global f
+    i=0
+    s=0
+    f=0
+    if not arg:
+        print ("no elements")
+    else:
+        if len(arg) == 1:
+            print (arg)
+        else:
+            for item in arg:
+                if type(item) == int:
+                    i = i+1
+                if type(item) == str:
+                    s +=1
+                if type(item) == float:
+                    f +=1
+
+
+
+print(type(2.5))
+
+arguments(2, 3, 5, "Hello", "hi", 2.3, 5.8, 5.4)
+print ("int = "i)
+print (s)
+print (f)
